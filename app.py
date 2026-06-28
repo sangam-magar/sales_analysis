@@ -17,7 +17,6 @@ def load_data():
     return df
 df =load_data()
 
-
 # check_empty_data  =df.isnull().sum()
 # count_unknown =(df["region"] =="Unknown").sum()
 df["region"] =df["region"].fillna(value="unknown").astype(str)
